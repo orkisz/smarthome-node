@@ -1,0 +1,33 @@
+{
+  "name": "smarthome-node",
+  "version": "1.0.0",
+  "description": "A simple GPIO <-> MQTT connector for my smarthome",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orkisz/smarthome-node.git"
+  },
+  "keywords": [
+    "smarthome",
+    "gpio",
+    "rpi",
+    "mqtt"
+  ],
+  "dependencies": {
+    "lodash": "^4.17.10",
+    "mqtt": "^2.18.3",
+    "rpio": "^0.9.22"
+  },
+  "author": {
+    "name": "Krzysztof Orkisz",
+    "email": "krzysiek.orkisz@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/orkisz/smarthome-node/issues"
+  },
+  "homepage": "https://github.com/orkisz/smarthome-node#readme"
+}

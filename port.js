@@ -30,14 +30,14 @@ class Port {
         rpio.i2cRead(rxbuf, 1);
         return rxbuf[0];
     }
-    
+
     _i2cWriteByte(register, val) {
         rpio.i2cSetSlaveAddress(this.i2caddress);
         var txbuf = new Buffer([register, val]);
         var rxbuf = new Buffer(1);
         rpio.i2cWrite(txbuf);
-    }    
-    
+    }
+
     _setPortDirection(direction) {
         //
         // set direction for an IO port
@@ -146,7 +146,6 @@ updateByte = function (oldByte, bit, value) {
     if (value == false) {
         newByte = oldByte & ~(1 << bit);
     } else {
-
         newByte = oldByte | 1 << bit;
     }
     return (newByte);
